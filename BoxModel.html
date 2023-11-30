@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px; /* by default it will be 0px padding & margin until and unless you override it below*/
+        }
+      
+      .container{
+
+        background-color: burlywood;
+        border: 3px solid rgb(192, 135, 192);
+        /*we can set padding right left top bottom
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 65px;
+        padding-left: 75px;*/
+
+       /* margin-top: 15px;
+        margin-bottom: 12px;
+        margin-right: 14px;
+        margin-left: 44px;*/
+
+        /*padding: 23px 65px 55px 45px; /* padding/margin = top right bottom left*/
+        /*margin: 23px 65px 55px 45px; /* padding/margin = top right bottom left*/
+
+        padding: 55px 55px; /* y(top/bottom) x(left/right)*/
+        border-radius: 45px;
+        width: 455px;
+        margin: 44px;
+        
+      }
+
+
+    </style>
+
+        <div class ="container">
+          <h3> this is heading </h3>
+          <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi molestiae consequatur doloribus 
+            similique commodi maiores laboriosam iusto perspiciatis itaque earum deserunt, velit quidem!</p>
+
+        </div>
+
+        <div class ="container">
+            <h3> this is heading </h3>
+            <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi molestiae consequatur doloribus 
+              similique commodi maiores laboriosam iusto perspiciatis itaque earum deserunt, velit quidem!</p>
+  
+          </div>
+
+          <div class ="container">
+            <h3> this is heading </h3>
+            <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi molestiae consequatur doloribus 
+              similique commodi maiores laboriosam iusto perspiciatis itaque earum deserunt, velit quidem!</p>
+  
+          </div>
+    
+</body>
+</html>
