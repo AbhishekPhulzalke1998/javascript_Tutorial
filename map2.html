@@ -7,14 +7,20 @@
 </head>
 <body>
     <script>
-        /*var a = 10;
-        var b = 3;
-        a%=b;   // a = a % b
-        document.write(a);*/
-        
-        // let a = 12;
-        // let b = 4;
-        // console.log("a+=b",a+=b);
+ 
+  const company = new Map([
+    ["name","GFG"],
+    ["no_of_employee", 200],
+    ["category", "education"]
+  ]);
+
+  function prints(key, values)
+{
+    console.log(values + "=>" + key);
+
+}
+company.forEach(prints);
+
     </script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+      
+      /*
+OPERATOR NAME	           USAGE	                     DESCRIPTION
+Bitwise AND(&)	            a&b	                     Returns true if both operands are true
+Bitwise OR(|)	            a|b	                     Returns true even if one operand is true
+Biwise XOR(^)	            a^b	                     Returns true if both operands are different
+Bitwise NOT(~)	            a~b	                     Flips the value of the operand
+Bitwise Left Shift(<<)      a<<b	             Shifts the bit toward the left
+Bitwise Right Shift(>>)  	a>>b	         Shifts the bit towards the right
+Zero Fill Right Shift(>>>)	a>>>b        Shifts the bit towards the right but adds 0 from left
+
+*/
+
+let a = 4;  // 100 binary numbers
+let b = 1;  // 001 binary numbers
+
+document.write("A & B = " + (a & b) + "<br>"); 
+document.write("A | B = " + (a | b) + "<br>"); 
+document.write("~A = " + (~a) + "<br>"); //011
+document.write("A ^ B = " + (a ^ b) + "<br>"); 
+
+     </script>
+</body>
+</html>

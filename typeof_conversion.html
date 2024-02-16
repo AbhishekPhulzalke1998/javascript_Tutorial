@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Converting numbers into Strings
+        let v1 = 127;
+        let v2 = 125;
+
+        document.writeln(" typr of v1 before conversion " + typeof v1 + "<br>");
+        document.writeln(" typr of v2 before conversion " + typeof v2 + "<br>");
+
+
+        document.writeln(" typr of v1 before conversion " + typeof String(v1) + "<br>");
+        document.writeln(" typr of v2 before conversion " + typeof String(v2) + "<br><br><br>");
+        // OR wre can also write it v1.toString() & similarly v2.toString()
+
+        //**************************************************************//
+
+
+
+        // Converting Boolean into String
+
+
+
+        document.writeln("Type Of false before conversion: " + typeof false + "<br>");
+        document.writeln("Type Of false before conversion: " + typeof true + "<br>");
+
+        document.writeln("Type Of false after conversion: " + typeof String(false) + "<br>");
+        document.writeln("Type Of false after conversion: " + typeof String(true) + "<br><br><br>");
+
+
+        //**************************************************************//
+
+        //Converting Date Object into String
+
+        const currentDate = new Date();
+        const pastDate = new Date(20 / 12 / 2023);
+
+        document.writeln("Type Of false before conversion: " + typeof currentDate + "<br>");
+        document.writeln("Type Of false before conversion: " + typeof pastDate + "<br>");
+
+        document.writeln("Type Of false after conversion: " + typeof String(currentDate) + "<br>");
+        document.writeln("Type Of false after conversion: " + typeof String(pastDate) + "<br><br><br>");
+
+
+        //**************************************************************//
+
+        //Converting Values to Numbers
+
+        let v = "144";
+        document.writeln("Type of v before conversion: " + typeof v + "<br>");
+        document.writeln("Type of v after conversion: " + typeof Number(v) + "<br><br><br>");
+
+       //Using parseInt()
+
+       var val = "10";
+       var val2  = parseInt(val);
+       document.write(val2 + "<br>" + "typeof val2 is "+ typeof val2);
+
+    </script>
+</body>
+
+</html>
