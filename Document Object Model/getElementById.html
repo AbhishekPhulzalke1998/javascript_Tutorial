@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <h2>GeeksforGeeks</h2>
+
+       <p id="intro">Computer science branch</p>
+       <p>This example illustrates the <b>getElementById</b> method</p>
+       <p id="demo"></p>
+
+     <script>
+             const element = document.getElementById("intro");
+             document.getElementById("demo").innerHTML = 
+             "GeeksforGeeks introduction is :" + element.innerHTML;      
+    </script>
+    
+    <!-- //**********************************// -->
+     
+
+<script>
+        function getcube(){
+        var result = document.getElementById("number").value;
+        alert(result*result*result);
+        }
+</script>
+
+<form>
+    Enter No:<input type="text" id="number" name="number"/><br/>
+    <input type="button" value="cube" onclick="getcube()"/>
+</form>
+
+       
+
+
+</body>
+</html>

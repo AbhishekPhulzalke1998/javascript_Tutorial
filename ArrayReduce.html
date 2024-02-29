@@ -7,11 +7,14 @@
 </head>
 <body>
       <script>
-              let num = [3,5,2,6]
-              num.forEach((hello)=>{
-                document.write(hello*hello +"<br>")
-              })
 
+          const arr3 = [2,4,5,6];
+          const newValue = arr3.reduce((pre,cur) =>
+          {
+              return pre+cur;
+          })
+            
+          document.write(newValue);
 
       </script>
 </body>

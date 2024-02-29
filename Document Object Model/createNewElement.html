@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+
+    <div id = "box" name="JSDiv">this is a div
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+      </ul>
+      </div>
+  
+  <p class="para">this is simple line</p>
+
+
+
+       <script>
+                let newBtn = document.createElement("button");   // first we create element button
+                newBtn.innerText = "click me"; // adding innertext 
+                console.log(newBtn);          // print in console
+
+                let p = document.querySelector("p"); //access the tag
+                p.after(newBtn);        // after p tag i want to add button outside
+                p.before(newBtn);      // before p tag i want to add button outside
+                p.append(newBtn);     //adds at the end of node (inside)
+                p.prepend(newBtn);   //adds at the end of node (inside)
+                
+       </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+               // pure function
+                function ADD(a,b)
+                { 
+                    var c = a + b;
+                    document.write(c + "<br>");
+                }
+                 
+                ADD(10,25);
+                ADD(10,25);
+                ADD(10,25);
+
+/************************************************************/
+//im-pure function
+       let total = 0;
+       
+       function addTotal(value)
+       {
+        total = total + value;
+        document.write(total + "<br>"); // OR return total;
+       }
+
+       addTotal(5);     // consle.log(addTotal(5));
+       addTotal(5);     // consle.log(addTotal(5));
+       addTotal(5);     // consle.log(addTotal(5));
+       </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- // in this code will look in for the differece between innerHTML and innerText -->
+
+
+    <div id="sbi">
+        <p>This is paragragh</p>
+        <h5>This is heading 5</h5>
+        <span>This is span</span>
+        <footer>This is footer</footer>
+    </div>
+
+    <input type="button" value="submit_HTML" onclick="geek()">
+    <input type="button" value="submit_Text" onclick="geek()">
+    <script>
+        function geek() {
+            let icici = document.getElementById("sbi");
+            alert(icici.innerHTML);
+            alert(icici.innerText);
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -6,11 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+
+     <p id="myParagraph">This is a paragraph.</p>
+
       <script>
-              let num = [3,5,2,6]
-              num.forEach((hello)=>{
-                document.write(hello*hello +"<br>")
-              })
+           let element = document.querySelector("#myParagraph");
+           element.setAttribute("class","highlight");
+
+           console.log(element.outerHTML);
 
 
       </script>

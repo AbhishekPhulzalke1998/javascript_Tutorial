@@ -7,15 +7,37 @@
 </head>
 <body>
     <script>
+// using object literal
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 50,
+//     eyeColor: "blue"
+//   };
+// console.log(person['lastName']);
 
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 50,
-    eyeColor: "blue"
-  };
 
-  console.log(person.firstName + " is " ,  person.age + " old  " + " having " + person.eyeColor,"eye  color");
+// By creating instance of Object
+
+var emp=new Object();  
+emp.id=101;  
+emp.name="Ravi Malik";  
+emp.salary=50000;  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+console.log(emp); 
+
+//By using an Object constructor
+
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+}  
+var e=new emp(103,"Vimal Jaiswal",30000);  
+  
+document.write(e.id+" "+e.name+" "+e.salary); 
+
+
 
     </script>
 </body>

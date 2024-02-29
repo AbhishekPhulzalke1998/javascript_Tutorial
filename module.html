@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <script type="module" >
+        import {order} from '/module3.js';
+        window.order = order;
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-      <script>
-              let num = [3,5,2,6]
-              num.forEach((hello)=>{
-                document.write(hello*hello +"<br>")
-              })
 
-
-      </script>
+    Hello!
+    <button onclick="order()">Click Me</button>
+    
 </body>
 </html>

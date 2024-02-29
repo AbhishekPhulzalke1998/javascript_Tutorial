@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+     function api() // normal function decleared
+     {
+        return new Promise((resolve,reject) =>{     // return a promise
+            setTimeout(()=>{                       // setTimeout to make it asynchronous 
+             console.log("weather data");         // printin custom message
+             resolve(200);                       //promise fullfillment resolve with success code 200
+            },2000);                            // code excution will done after 2 sec
+        });
+     }
+
+     async function getweatherData()  // async function decelared with name hellogetweatherDate
+      {
+            await api();           // called first time 
+            await api();          // called second time
+      }
+
+         getweatherData(); 
+    </script>
+</body>
+</html>

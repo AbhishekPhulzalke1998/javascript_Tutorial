@@ -97,7 +97,7 @@ newBtn.innerText = "click me"; // adding innertext
 console.log(newBtn);  // print in console
 
 let p = document.querySelector("p"); //access the tag
-p.after(newBtn); // after p tag i want to add button 
+p.after(newBtn); // after p tag i want to add button  
 
 let new_heading = document.createElement("h1");
 new_heading.innerText = "This is new heading";

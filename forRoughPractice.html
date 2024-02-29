@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = ["Abhishek", "Abhijeet", "Ramesh", "suresh"];
+
+
+        for (var kt in obj)  // for in loop
+        {
+            document.write(kt + "<br>") // if we write as obj[kt] we will recived values
+        }
+        // Here we will get output in terms of keys(in terms of object) or index(in terms of array)
+
+        for (var mt of obj)   // for of loop
+        {
+            document.write(mt + "<br>")
+        }
+        // Here we are getting values of array or object.
+
+        obj.forEach(function(ktm,dominor)  // 
+          {
+            document.write(dominor + ": " + ktm + "<br>");
+          }
+        )
+
+    </script>
+
+</body>
+
+</html>

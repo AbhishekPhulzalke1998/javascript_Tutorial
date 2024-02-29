@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+              
+              let Student = {
+                              firstName : "Abhishek",
+                              lastName : "Phulzalke",
+                              Addresss : "Beed",
+                              mobile_No : 9657927822
+              }
+
+              console.log("Student=>",Student);
+              let Student1 = Student; // shallow copy
+              console.log("Student1=>",Student1);
+
+              Student1.firstName = "Gaurav";
+              console.log("Student=>",Student);
+              console.log("Student1=>",Student1);
+
+      </script>
+</body>
+</html>
