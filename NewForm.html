@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .conatiner-form{
+            width: 800px;
+            background-color: whitesmoke;
+            border: 1px solid black;
+            border-radius: 10px;
+
+        }
+
+        h2{
+            text-align: center;
+            color: green;
+        }
+  
+         label{
+            display:flex ;
+            margin-right: 50%;
+                text-align: left;
+                color: black;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+         }
+
+         input {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 25%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border:  1px solid black;
+            border-radius: 5px;
+         }
+
+         .btn{
+            color: white;
+            background-color: green;
+            justify-content: center;
+            /* align-items: center; */
+            border-radius: 5x;
+            cursor: pointer;
+            font-weight: 700;
+            width: 20%;
+            margin-left: 35%;
+            height: 25px;
+
+         }
+  
+
+
+
+    </style>
+</head>
+<body>
+     <form action="">
+        <div class="container">
+     <div class="conatiner-form">
+
+            <h2>Registration Form</h2>
+
+            <div>
+            <label >FirstName : </label>
+            <input type="text" name="FirstName" placeholder="Enter the  FirstName">
+        </div>
+            
+            <div>
+            <label >LastName : </label>
+            <input type="text" name="LastName" placeholder="Enter the  LastName">
+        </div>
+
+            <div>
+            <label >Email :</label>
+            <input type="email" name="email" placeholder="Enter the  email">
+        </div>
+          <button class="btn">Submit</button>
+    </div>
+        </div>
+     </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+        var a = [1,2,3,4,5,6,7,8,9];
+       let maxElement =a[0];
+       let minElement = a[0];
+
+       for(let i=1;i<a.length;i++){
+          if(a[i]>a[0]){
+          maxElement = a[i];
+       }
+    }
+
+    document.write("The maximum number in array is :"+ maxElement + "<br>");
+    // for minimum value
+    for(let i=1;i<a.length;i++){
+          if(a[i]<a[0]){
+          minElement = a[i];
+       }
+    }
+    document.write("The minimum number in array is :"+minElement);
+
+       </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5%;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .form-row label {
+            width: 25%;
+            text-align: right;
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row input,
+        .form-row textarea {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-row input[type="radio"] {
+            width: auto;
+        }
+
+        .heading-style {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn input {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading-style">Student Registration Form</h2>
+    <form class="form-container">
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" />
+     
+             <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" />
+
+            <label for="mobile_number">Mobile Number</label>
+            <input type="text" id="mobile_number" name="mobile_number" placeholder="Enter your Mobile Number" />
+
+            <label for="native_place">Native Place</label>
+            <input type="text" id="native_place" name="native_place" placeholder="Enter your city place" />
+      
+            <label for="gender">Gender</label>
+            <input type="radio" id="gender_male" name="gender" value="Male" /> Male
+            <input type="radio" id="gender_female" name="gender" value="Female" /> Female
+
+            <label for="std">Standard</label>
+            <input type="text" id="std" name="std" placeholder="Enter the standard" />
+    
+            <label for="marks">Previous Year Marks</label>
+            <input type="number" id="marks" name="marks" placeholder="Enter your marks" />
+  
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="btn">
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+</html>

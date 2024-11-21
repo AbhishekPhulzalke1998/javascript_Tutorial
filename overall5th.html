@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Form</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: black; /* Changed to black */
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white; /* Changed to white */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: lightgray; /* Changed to lightgray */
+            color: black; /* Changed to black */
+        }
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid lightgray; /* Changed to lightgray */
+            border-radius: 5px;
+            background-color: whitesmoke; /* Changed to whitesmoke */
+        }
+        input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="password"], textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid lightgray; /* Changed to lightgray */
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: green; /* Changed to green */
+            color: white; /* Changed to white */
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkgreen; /* Changed to darkgreen */
+        }
+        h3, h4 {
+            color: black; /* Changed to black */
+        }
+        hr {
+            border: 0.5px solid lightgray; /* Changed to lightgray */
+        }
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+<form>
+<h3>Payment Form</h3>
+<p>Required fields are marked by *</p>
+<h4>Contact Information</h4>
+<p>Name: *</p>
+<input type="text" name="name" required>
+<p>Gender: *</p>
+<input type="radio" name="gender" required> Male
+<input type="radio" name="gender" required> Female
+<p>Address</p>
+<textarea name="address" cols="45" rows="6"></textarea>
+<p>Email</p>
+<input type="email" name="email" required>
+<p>Pincode</p>
+<input type="text" name="pincode" required>
+<hr>
+<p>Card Type:</p>
+<select>
+<option value="select card type">Select card type</option>
+<option value="VISA">VISA</option>
+<option value="RUPAY">RUPAY</option>
+<option value="MASTERCARD">MASTERCARD</option>
+</select>
+<fieldset>
+<legend>Card Details</legend>
+<p>Card Number</p>
+<input type="number" name="card_number">
+</fieldset>
+<p>Expiration Date: *</p>
+<input type="date" name="exp_date" required>
+<p>CVV</p>
+<input type="password" name="cvv" required>
+<input type="submit" value="Pay Now">
+</form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.dropdown-wrapper {
+    max-height: 200px; /* Set the maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 200px; /* Set width of the dropdown wrapper */
+  }
+  

@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>overall html</title>
+    <style>
+        div.relative {
+            position: relative;
+            left :180px;
+            width: 20%;
+            border: 3px solid #73AD21;
+        }
+    </style>
+    
 </head>
 <body bgcolor="skyblue">
 
@@ -27,7 +36,7 @@
       </ul>
       <br><hr>
 
-      <ol type="1">
+      <ol type="A">
         <li>Sun Pharma</li>
         <li>Cipla</li>
         <li>Lupin</li>
@@ -47,7 +56,7 @@
     <ol type="traingle">
         <details>
               <summary>What is full form of CSS </summary>
-              <p>Cscading Style sheets </p>
+              <p>Cascading Style sheets </p>
         </details>
     </ol>
     <br><hr>
@@ -65,10 +74,11 @@
     <option>ICICI life insurance</option>
     <option>New India life insurance</option>
 
-  </select> <br><hr>
+  </select> <br><hr><br>
 
   <table border="5px" cellpadding="15px" cellspacing="20px">
-    <caption>student Registration</caption>
+    <caption><b>Student Registration</b></caption>
+   
 
     <tr>
         <th>Name</th>
@@ -124,7 +134,7 @@
     <h2>Personal Details</h2><br>
 
     <p>Name</p>
-    <input type="text" name="name"><br>
+    <input type="text" name="name"><br><br>
 
  <fieldset>
           <legend>Gender</legend>
@@ -141,6 +151,8 @@
 
 <h2> Card Details </h2><br><br>
 
+<image src="./img/creditcard.jpg" width="200" height="100" alt="This is card image" />
+
 <p>Card Number</p>
 <input type="text" name="card Number"><br>
 
@@ -150,10 +162,24 @@
     <option>RUPAY</option>
     <option>VISA</option>
     <option>MASTERCARD</option>
-</select><br>
+</select><br><br>
 
-<p>Expiray Date</p>.
-<input type="date" name="Expiray Date"><br>
+<p>If not have credit Card then you can choose from the following any card</p><br>
+<label for="check1">VISA</label>        <input type="checkbox" name="check" id="check1"  value="VISA"><br>         
+<label for="check2">RUPAY</label>       <input type="checkbox" name="check" id="check2" value="RUPAY"><br>          
+<label for="check3">MASTERCARD</label>  <input type="checkbox" name="check" id="check3" value="MASTERCARD"><br>      
+<label for="check4">NORMAL CARD</label> <input type="checkbox" name="check" id="check4" value="NORMAL CARD"><br>      
+<br>     
+<hr>
+        <p>Please select your branch</p>
+        <input type="radio" name="Bank" />ICICI
+        <input type="radio" name="Bank1" />HDFC
+        <br><hr>
+    
+
+
+<p>4xpiray Date</p>
+<in4ut type="Date"><br>
 
 
 <p>CVV Number</p>
@@ -161,8 +187,108 @@
 
 <input type = "submit" name = "submit"><br><hr>
 
-<a href="Overall_2nd.html">Next</a>
 
 </form>
+<br><br>
+
+
+<a href="Overall_2nd.html">Next</a>
+
+<h3>
+    Various options available in the
+    Target Attribute
+</h3>
+
+<p>
+    If you set the target attribute to
+    "_blank", the link will open in a new
+    browser window or tab.
+</p>
+<a href="https://www.geeksforgeeks.org" 
+   target="_blank">
+    GeeksforGeeks
+</a>
+
+<p>
+    If you set the target attribute to
+    "_self", the link will open in the
+    same window or tab.
+</p>
+<a href="https://www.geeksforgeeks.org" 
+   target="_self">
+    GeeksforGeeks
+</a>
+
+<p>
+    If you set the target attribute to
+    "_top", the link will open in the full
+    body of the window.
+</p>
+<a href="https://www.geeksforgeeks.org" 
+   target="_top">
+    GeeksforGeeks
+</a>
+
+<p>
+    If you set the target attribute to
+    "_parent", the link will open in the
+    parent frame.
+</p>
+<a href="https://www.geeksforgeeks.org" 
+   target="_parent">
+    GeeksforGeeks
+</a>
+
+
+
+
+<p>Welcome to  the 
+<abbr title="Geeks for geeks">GFG</abbr>
+</p>
+<br>
+<p> the formula for water is 
+    H<sub>2</sub>O
+
+</p>p>
+<br>
+<p><b>This is genral paragraph</b></p><br>
+
+
+<p>
+    <bdo dir="rtl">The quick brown fox jumps over
+        the lazy dog</bdo>
+</p><br>
+
+<p>
+    Welcome to
+    <abbr title="GeeksforGeeks">GfG</abbr>
+</p><br>
+
+<address>
+<p>Addess:
+    <br>
+    Yashwantrao chavan marag<br>
+    Hanuman road ,shahunagar<br>
+    Beed [431122]
+</p>
+</address> 
+    
+<br><hr>
+
+<h1>position: relative;</h1>
+
+    <div class="relative">
+        This element has position:relative;
+    </div>
+
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Academics">Academics</a></li>
+        <li><a href="#Admission">Admission</a></li>
+        <li><a href="#Enquiry">Enquiry</a></li>
+    </ul>
+
+</body>
+
 </body>
 </html>

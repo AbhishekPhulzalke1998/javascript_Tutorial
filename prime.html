@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+             var number = prompt("Enter the the number that you want to check is it prime or not");
+             let isPrime = true;
+
+             for(let i =2; i<number; i++){
+                if(number % i == 0){
+                    isPrime = false;
+                }
+             }
+
+             if(isPrime){
+                document.write("the given nuber is the prime number")
+             }else{
+                document.write("the given number is not the prime number")
+             }
+
+
+            //   var number = prompt("Enter the the number that you want to check is it prime or not");
+            //   let isPrime = true;
+             
+            //   for(let i =2; i<number; i++)
+             
+            //   if(number % i == 0){
+            //         document.write("the given number is the not prime number")
+            //     }else{
+            //         document.write("the given number is the  prime number")
+            //     } 
+    </script>
+</body>
+</html>

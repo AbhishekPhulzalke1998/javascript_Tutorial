@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"]{
+            margin-bottom: 20px;
+        }
+        input[type="checbox"]{
+            margin-bottom: 20px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-container label {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1">
+        <fieldset>
+            <legend>User Personal Information</legend>
+            
+            <label>Enter your full Name :-</label>
+            <input type="text" name="name"/>
+
+            <label>Enter your Surname :-</label>
+            <input type="text" name="surname"/>
+
+            <label>Enter your date of birth :-</label>
+            <input type="date" name="DOB" />
+
+            <label>Choose the gender :-</label>
+            <input type="radio" name="gender" />male
+            <input type="radio" name="gender" />Female
+
+            <label>Choose the hobbies :-</label>
+            <div class="checkbox-container">
+                <label for="check1">Cricket<input type="checkbox" id="check1" name="check" value="Cricket" /></label>
+                <label for="check2">football<input type="checkbox" id="check2" name="check" value="football" /></label>
+                <label for="check3">Badminton<input type="checkbox" id="check3" name="check" value="Badminton" /></label>
+                <label for="check4">Tennis<input type="checkbox" id="check4" name="check" value="Tennis" /></label>
+            </div>
+
+            <label>Enter the Username :-</label>
+            <input type="email" name="email" />
+
+            <label>Enter the UserName :-</label>
+            <input type="text" name="username"/>
+
+            <label>Enter the password :-</label>
+            <input type="password" name="password" />
+
+            <label>Confirm Password :-</label><br>
+            <input type="password" name="confirm_password" /><br>
+
+            <input type="submit" value="submit" />
+        </fieldset>
+    </form>
+</body>
+</html>

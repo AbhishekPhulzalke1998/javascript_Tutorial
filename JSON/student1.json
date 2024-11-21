@@ -2,7 +2,7 @@
   
     "students" : [
    {
-    "students" : "vishu",
+    "name" : "vishu",
     "age" : 25
    },
 
@@ -15,5 +15,5 @@
      "name" : "ram",
       "age":27
    }
-]
-}
+ ]
+} 

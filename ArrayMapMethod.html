@@ -9,14 +9,18 @@
        <script>
         //  The map() method is used for creating a new Array
         // from an existing one , applying a function to each
-        // one of the elements of the first array       
+        // one of the elements of the first array  
+        
+        function element(num){
+           return num * 2;
+        }
 
        const arr1 = [2,6,7,5,9,8,2];
-       const newArr = arr1.map((element)=>
-       {
-         return element*2;
+       const newArr = arr1.map(element);
 
-       })
+
+
+       
 
        document.write(newArr);
 

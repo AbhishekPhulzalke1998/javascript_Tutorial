@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 50%;
+            margin-left: 30%;
+        }
+
+        #heading-style {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            color: black;
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"]{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+        }
+
+        input[type="submit"] {
+            width: 50%;
+            background-color: green;
+            color: white;
+            padding: 12px;
+            margin-top: 20px;
+            margin-left: 27%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form enctype="multipart/form-data">
+
+        <h3 id="heading-style">Employee Registration Form</h3>
+        <p>Note:- Required fields are marked by *</p>
+
+         <p>Name: *</p>
+        <input type="text" name="name" required>
+
+        <p>Gender: *</p>
+        <input type="radio" name="gender" required> Male
+        <input type="radio" name="gender" required> Female
+
+        <p>Address</p>
+        <textarea name="address"></textarea>
+
+        <p>Email *</p>
+        <input type="email" name="email" required>
+
+        <p>Pincode</p>
+        <input type="number" name="pincode" required>
+        <hr>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+            <p>Mobile Number*</p>
+            <input type="number" name="Mo_number" required>
+        </fieldset>
+
+        <p>Date of birth: *</p>
+        <input type="date" name="date" required><br><br>
+
+        <p>Upload your Photo</p>
+        <input type="file" multiple/><br><br>
+        
+        <p>I am agree to accept the terms and conditions    <input type="checkbox" name="terms" required></p>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
